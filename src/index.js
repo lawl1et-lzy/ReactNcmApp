@@ -8,6 +8,7 @@ import './util/flex'
 import App from './App'
 // css
 import './style/reset.scss';
+import '@/style/font-awesome/scss/font-awesome.scss'
 
 ReactDOM.render(
   <Provider store={store}>
