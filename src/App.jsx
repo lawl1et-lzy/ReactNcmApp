@@ -4,7 +4,7 @@ import {
   Route,
 } from 'react-router-dom'
 import router from '@/router/index'
-class Todos extends Component {
+class App extends Component {
   constructor(props) {
     super()
   }
@@ -27,4 +27,4 @@ class Todos extends Component {
   }
 }
 
-export default Todos;
+export default App;
