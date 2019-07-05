@@ -1,0 +1,23 @@
+.header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .both{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+    .iconAngle{
+      width: 40px;
+    }
+  }
+  .title{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

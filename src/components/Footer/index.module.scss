@@ -1,0 +1,23 @@
+.footer{
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 14px;
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .subName{
+      margin-top: 10px;
+      font-size: 12px;/*no*/
+    }
+  }
+  .faFontsize{
+    font-size: 24px;/*no*/
+  }
+}

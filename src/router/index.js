@@ -7,18 +7,30 @@ let router = [
   {
     path: '/',
     exact: true, // 是否设置为严格模式
+    name: '我的',
+    footerObj: {
+      show: true,
+      icon: 'home'
+    },
     component: SongSheet
   },
   {
     path: '/songlist',
+    name: '列表',
     component: SongList
   },
   {
     path: '/my',
+    name: '账号',
+    footerObj: {
+      show: true,
+      icon: 'file-o'
+    },
     component: My
   },
   {
     path: '/login',
+    name: '登录',
     component: Login
   },
 ]
