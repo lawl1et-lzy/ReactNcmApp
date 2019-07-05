@@ -10,7 +10,8 @@ let router = [
     name: '我的',
     footerObj: {
       show: true,
-      icon: 'home'
+      icon: 'circle-o',
+      actIcon: 'circle'
     },
     component: SongSheet
   },
@@ -24,7 +25,8 @@ let router = [
     name: '账号',
     footerObj: {
       show: true,
-      icon: 'file-o'
+      icon: 'square-o',
+      actIcon: 'square'
     },
     component: My
   },
