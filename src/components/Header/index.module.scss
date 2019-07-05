@@ -1,12 +1,16 @@
 .header{
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
   display: flex;
   justify-content: center;
+  height: 90px;
   .both{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 0 16px;
     width: 100%;
     .iconAngle{
       width: 40px;

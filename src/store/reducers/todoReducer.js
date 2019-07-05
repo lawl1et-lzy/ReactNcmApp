@@ -1,39 +1,26 @@
 /* eslint-disable */
-import { ADD_TODO, DEL_TODO } from '../actions/actionTypes.js'
-// import { addTodo } from '../actions/todoAction';
+import {
+  GET_SONG_SHEET_LIST
+} from '../actions/actionTypes.js'
+import mState from '../state/index.state'
 
-const initState = {
-  list: ['lawl1et', 'niya']
-}
-// 添加
-const addTodo = (state, action) => {
-  let newList = [...action.payload.list]
-
+let getSongSheetList = (state, action) => {
   return {
-    list: newList
+    songSheetList: action.data || []
   }
 }
-// 删除
-const delTodo = (state, action) => {
-  let index = action.payload.index
-  let oriState = state.list
-  return {
-    list: oriState.splice(index, 1)
-  }
-}
+
 /**
  * 
  * @param {*} state 
  * @param {*} action 所有 action 的集合
  */
-const todoReducer = (state = initState, action) => {
+const todoReducer = (state = mState.songList, action) => {
   switch(action.type) {
-    case ADD_TODO :
-      return addTodo(state, action);
-    case DEL_TODO :
-        return delTodo(state, action);
+    case GET_SONG_SHEET_LIST :
+      return getSongSheetList(state, action);
     default:
-      return state;
+      return '';
   }
 }
 

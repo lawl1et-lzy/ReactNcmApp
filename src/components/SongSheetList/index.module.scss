@@ -1,0 +1,26 @@
+.section{
+  .scrollView{
+    height: 100%;
+    .scrollViewItem{
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      padding: 0 10px;
+      .img{
+        border-radius: 8px;
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+      }
+      .sheet{
+        height: 100%;
+        .sheetName{
+          font-size: 32px;
+        }
+        .sheetNum{
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}

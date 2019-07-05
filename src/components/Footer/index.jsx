@@ -22,12 +22,14 @@ class Footer extends Component {
             let footerNav
             if(footerObj && footerObj.show) {
               footerNav = 
-              <div className={style.nav} key={index} onClick={() => this.handleSubNavClick(path)}>
-                <i className={`fa fa-${footerObj.icon} ${style.faFontsize} fa-lg`}></i>
-                <div className={style.subName}>
-                  { name }
+              (
+                <div className={style.nav} key={index} onClick={() => this.handleSubNavClick(path)}>
+                  <i className={`fa fa-${footerObj.icon} ${style.faFontsize} fa-lg`}></i>
+                  <div className={style.subName}>
+                    { name }
+                  </div>
                 </div>
-              </div>
+              )
             }
             return footerNav
           })

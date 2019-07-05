@@ -22,13 +22,11 @@ class App extends Component {
                 key={index}
                 exact={exact}
                 component={component}
-                // render = {(props) => <Component name={name} {...props}/>}
               />
           })
         }
         </Switch>
       </Router>
-      // <Router routes={router} />
     )
   }
 }

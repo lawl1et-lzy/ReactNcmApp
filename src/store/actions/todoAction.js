@@ -1,22 +1,25 @@
-import { ADD_TODO, DEL_TODO } from './actionTypes.js'
+import { 
+  GET_SONG_SHEET_LIST
+} from './actionTypes.js'
+import Api from '@/api/index.api'
+import mState from '../state/index.state'
 
-const addTodo = (payload) => {
+// 获取歌单列表
+const getSongSheetList = ({ uid }) => {
+  if(!uid) return false
+  // let res = await Api.getSongSheet(uid)
+  // let { playlist, code } = res
+  // if(code === 200) {
+  //   mState.songList = playlist
+  // }
   return {
-    type: ADD_TODO,
-    payload
-  }
-}
-
-const delTodo = (payload) => {
-  return {
-    type: DEL_TODO,
-    payload
+    type: GET_SONG_SHEET_LIST,
+    data: mState.songSheetList
   }
 }
 
 export {
-  addTodo,
-  delTodo
+  getSongSheetList
 }
 
 
