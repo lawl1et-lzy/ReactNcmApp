@@ -29,5 +29,7 @@ img {width:100%;vertical-align:middle;display:inline-block;}
 .scroll {overflow:auto !important;-webkit-overflow-scrolling:touch !important;}
 .noscroll {overflow:hidden !important;}
 #root{
+  height: 100%;
+  width: 100%;
   font-size: 18px;/*no*/
 }

@@ -7,7 +7,6 @@ const axios = Axios.create(config)
 // 请求拦截器
 axios.interceptors.request.use(
   (config) => {
-    console.log('request config', config)
     // let { method, data } = config
     // if(method === 'get') {
     //   config.url = `${config.url}?${Qs.stringify(data)}`

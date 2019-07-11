@@ -30,7 +30,6 @@ class Footer extends Component {
         item.active = false
       }
     })
-    console.log('handleRouterAct', router)
     return router
   }
 

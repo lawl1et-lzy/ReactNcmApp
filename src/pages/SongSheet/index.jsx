@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import { getSongSheetList } from '@/store/actions/todoAction'
 import { connect } from 'react-redux'
+import Cookies from 'universal-cookie';
 // component
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -10,21 +11,26 @@ import SongSheetList from '@/components/SongSheetList'
 import style from './index.module.scss'
 
 class SongSheet extends Component{
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
-      title: '歌单列表'
+      title: '歌单列表',
+      cookies: new Cookies(), // cookie 操作对象
     }
-    console.log('SongSheet props', props)
   }
 
   // created
   componentWillMount() {
-    // TODO: EDIT
     let rp = {
-      uid: '38390609'
+      uid: ''
     }
-    this.props.dispatch(getSongSheetList(rp))
+    let user = this.state.cookies.get('user')
+    if(user) {
+      rp.uid = user.id
+      this.props.dispatch(getSongSheetList(rp))
+    } else {
+      this.props.history.push({'pathname': '/login'})
+    }
   }
 
   render() {
