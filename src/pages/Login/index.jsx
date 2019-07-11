@@ -35,7 +35,6 @@ class Login extends Component{
 
   // 登录
   handleLogin () {
-    // TODO: 验证...
     let rp = {
       phone: this.state.account,
       password: this.state.password

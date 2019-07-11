@@ -1,5 +1,10 @@
+// SongSheet
 const GET_SONG_SHEET_LIST = 'GET_SONG_SHEET_LIST'
+// SongList
+const GET_SONG_LIST = 'GET_SONG_LIST'
+
 
 export {
-  GET_SONG_SHEET_LIST
+  GET_SONG_SHEET_LIST,
+  GET_SONG_LIST
 }

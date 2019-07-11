@@ -10,11 +10,11 @@ class Api {
     })
   }
   // 获取歌单列表
-  static getSongSheet(uid) {
+  static getSongSheet(params) {
     return axios({
       method: 'get',
       url: '/user/playlist',
-      params: uid
+      params
     })
   }
 

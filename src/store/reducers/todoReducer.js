@@ -20,7 +20,7 @@ const todoReducer = (state = mState.songList, action) => {
     case GET_SONG_SHEET_LIST :
       return getSongSheetList(state, action);
     default:
-      return '';
+      return [];
   }
 }
 

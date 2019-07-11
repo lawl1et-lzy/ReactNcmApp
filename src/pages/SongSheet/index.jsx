@@ -33,12 +33,23 @@ class SongSheet extends Component{
     }
   }
 
+  // SongSheetList 子组件的歌单点击事件
+  handleSongSheetItemClick(id) {
+    if(!id) return
+    this.props.history.push({
+      'pathname': `/songlist/${id}`
+    })
+  }
+
   render() {
     return (
       <div className="wrap-songsheet">
         <Header title={this.state.title}/>
         <section className={style.songSheetList}>
-          <SongSheetList list={this.props.songSheetList} />
+          <SongSheetList
+            list={this.props.songSheetList}
+            handleSongSheetItemClick={(id) => this.handleSongSheetItemClick(id)}
+          />
         </section>
         <Footer />
       </div>

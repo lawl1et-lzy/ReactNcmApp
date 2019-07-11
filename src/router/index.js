@@ -16,7 +16,7 @@ let router = [
     component: SongSheet
   },
   {
-    path: '/songlist',
+    path: '/songlist/:id',
     name: '列表',
     component: SongList
   },
