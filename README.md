@@ -6,6 +6,8 @@ react@16.8.2 + react-redux@7.1.0 + react-router-dom@5.0.1 + webpack@4.28.3 + axi
 
 <img src="https://s31.aconvert.com/convert/p3r68-cdx67/crhkp-oe9sm.gif" width="414" height="736"/>
 
+## 如果gif失败，请用二维码尝试
+<img src="https://s31.aconvert.com/convert/p3r68-cdx67/crhkp-oe9sm.gif" width="414" height="414"/>
 
 ## 项目运行
 
@@ -25,6 +27,7 @@ npm run build (打包，部署)
 ```
 
 ## 项目概览
+```
 ---
  |---- config/                      相关配置项            
  |---- public/                      公共资源            
@@ -55,7 +58,7 @@ npm run build (打包，部署)
         |---- flex/                 rem 配置文件            
  |---- package.json                 配置信息            
  |---- README.md                    说明文档            
-
+```
 
 ## 网易云音乐 API
 github 链接：https://github.com/Binaryify/NeteaseCloudMusicApi
@@ -92,5 +95,3 @@ $ set PORT=4000 && node app.js
 ## 使用文档
 
 [文档地址](https://binaryify.github.io/NeteaseCloudMusicApi)
-
-![文档](https://raw.githubusercontent.com/Binaryify/NeteaseCloudMusicApi/master/static/docs.png)
