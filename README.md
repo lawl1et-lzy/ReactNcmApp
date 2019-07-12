@@ -4,14 +4,16 @@ react@16.8.2 + react-redux@7.1.0 + react-router-dom@5.0.1 + webpack@4.28.3 + axi
 
 ## 项目展示
 
-## SongSheet 歌单列表
-<img src="https://github.com/lawliet-lzy/resource/blob/master/image/SongSheet.png" width="414" height="736"/>
+### SongSheet 歌单列表
+<img src="https://github.com/lawliet-lzy/resource/blob/master/image/ReactNcmApp/SongSheet.png" width="414" height="736"/>
 
-## SongList 歌曲列表
-<img src="https://github.com/lawliet-lzy/resource/blob/master/image/SongList.png" width="414" height="736"/>
+### SongList 歌曲列表
 
-## UserInfo 个人信息
-<img src="https://github.com/lawliet-lzy/resource/blob/master/image/SongList.png" width="414" height="736"/>
+<img src="https://github.com/lawliet-lzy/resource/blob/master/image/ReactNcmApp/SongList.png" width="414" height="736"/>
+
+### UserInfo 个人信息
+
+<img src="https://github.com/lawliet-lzy/resource/blob/master/image/ReactNcmApp/SongList.png" width="414" height="736"/>
 
 ## 项目运行
 
@@ -31,6 +33,7 @@ npm run build (打包，部署)
 ```
 
 ## 项目概览
+
 ```
 ---
  |---- config/                      相关配置项            
@@ -64,21 +67,22 @@ npm run build (打包，部署)
  |---- README.md                    说明文档            
 ```
 
+
 ## 网易云音乐 API
 github 链接：https://github.com/Binaryify/NeteaseCloudMusicApi
 
-## 环境要求
+### 环境要求
 
 需要 NodeJS 8.12+ 环境
 
-## 安装
+### 安装
 
 ```shell
 $ git clone git@github.com:Binaryify/NeteaseCloudMusicApi.git
 $ npm install
 ```
 
-## 运行
+### 运行
 
 ```shell
 $ node app.js
@@ -96,6 +100,6 @@ windows 下使用 git-bash 或者 cmder 等终端执行以下命令:
 $ set PORT=4000 && node app.js
 ```
 
-## 使用文档
+### 使用文档
 
 [文档地址](https://binaryify.github.io/NeteaseCloudMusicApi)
