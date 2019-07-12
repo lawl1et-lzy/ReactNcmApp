@@ -1,71 +1,96 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 项目技术栈
 
-## Available Scripts
+react@16.8.2 + react-redux@7.1.0 + react-router-dom@5.0.1 + webpack@4.28.3 + axios@0.19.0 + node-sass@4.12.0 + redux-thunk@2.3.0
 
-In the project directory, you can run:
+## 项目展示
 
-### `npm start`
+<img src="https://s31.aconvert.com/convert/p3r68-cdx67/crhkp-oe9sm.gif" width="414" height="736"/>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## 项目运行
 
-### `npm test`
+```
+git clone --depth 1 https://github.com/lawliet-lzy/ReactNcmApp.git  
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+cd ReactNcmApp 
 
-### `npm run build`
+npm install 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm start 
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+构建命令
+```
+npm run build (打包，部署)
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 项目概览
+---
+ |---- config/                      相关配置项
+ |---- public/                      公共资源
+ |---- scripts/                     脚本文件
+ |---- src/                         所有代码资源
+    |---- api/                      项目api使用接口
+    |---- components/               公有组件
+        |---- Footer/               底部标签导航组件
+        |---- Header/               头部组件
+        |---- SongListCom/          歌曲列表组件
+        |---- SongSheetList/        歌单列表组件
+        |---- UserInfo/             用户信息组件
+     |---- images/                  静态图片资源
+     |---- pages/                   所有页面
+        |---- Login/                登录页
+        |---- My/                   个人信息也
+        |---- SongList/             歌曲列表页
+        |---- SongSheet/            歌单列表页
+     |---- router/                  路由统一配置文件
+     |---- store/                   redux 全局 store仓库
+        |---- actions/              actions集合
+        |---- reducers/             reducers集合
+        |---- state/                初始化数据集合
+        |---- store/                单一 Store
+     |---- style/                   公用样式库
+     |---- util/                    工具类
+        |---- Api/                  axios 统一配置项
+        |---- flex/                 rem 配置文件
+ |---- package.json                 配置信息
+ |---- README.md                    说明文档
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 网易云音乐 API
+github 链接：https://github.com/Binaryify/NeteaseCloudMusicApi
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 环境要求
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+需要 NodeJS 8.12+ 环境
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 安装
 
-## Learn More
+```shell
+$ git clone git@github.com:Binaryify/NeteaseCloudMusicApi.git
+$ npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 运行
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```shell
+$ node app.js
+```
 
-### Code Splitting
+服务器启动默认端口为 3000,若不想使用 3000 端口,可使用以下命令: Mac/Linux
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```shell
+$ PORT=4000 node app.js
+```
 
-### Analyzing the Bundle Size
+windows 下使用 git-bash 或者 cmder 等终端执行以下命令:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```shell
+$ set PORT=4000 && node app.js
+```
 
-### Making a Progressive Web App
+## 使用文档
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+[文档地址](https://binaryify.github.io/NeteaseCloudMusicApi)
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-#### TODO
-1. 全局设置路由拦截
+![文档](https://raw.githubusercontent.com/Binaryify/NeteaseCloudMusicApi/master/static/docs.png)
