@@ -5,13 +5,13 @@ react@16.8.2 + react-redux@7.1.0 + react-router-dom@5.0.1 + webpack@4.28.3 + axi
 ## 项目展示
 
 ## SongSheet 歌单列表
-<img src="./public/image/SongSheet.png" width="414" height="736"/>
+<img src="https://github.com/lawliet-lzy/resource/blob/master/image/SongSheet.png" width="414" height="736"/>
 
 ## SongList 歌曲列表
-<img src="./public/image/SongList.png" width="414" height="736"/>
+<img src="https://github.com/lawliet-lzy/resource/blob/master/image/SongList.png" width="414" height="736"/>
 
 ## UserInfo 个人信息
-<img src="./public/image/SongList.png" width="414" height="736"/>
+<img src="https://github.com/lawliet-lzy/resource/blob/master/image/SongList.png" width="414" height="736"/>
 
 ## 项目运行
 
