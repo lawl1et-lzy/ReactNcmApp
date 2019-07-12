@@ -1,0 +1,52 @@
+.user{
+  padding: 46px 46px 90px 46px;
+  color: #fff;
+  .userHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img{
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+    .btnUserEdit{
+      width: 100px;
+      height: 40px;
+      font-size: 26px;
+      border: 1px solid #ccc;
+      line-height: 40px;
+      text-align: center;
+    }
+  }
+  .userInfo{
+    margin-top: 30px;
+    .infoName{
+      font-size: 36px;
+      font-weight: 500;
+    }
+    .infoF{
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      margin-top: 10px;
+      .verticalLine{
+        width: 1px;
+        margin: 0 18px;
+        color: #ccc;
+      }
+    }
+    .infoLabel{
+      margin-top: 10px;
+      display: flex;
+      .label{
+        font-size: 24px;
+        padding: 2px 20px;
+        border-radius: 20px;
+        &.labelLevel{
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+}

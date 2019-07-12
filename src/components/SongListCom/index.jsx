@@ -18,11 +18,11 @@ class SongList extends Component {
     return (
       <div className={style.section}>
         <div className={style.detail}>
-          <img className={style.img} src={ this.props.playlist.coverImgUrl } />
+          <img className={style.img} src={ this.props.playlist.coverImgUrl } alt={this.props.playlist.coverImgUrl} />
           <div className={style.detailInfo}>
             <div className={style.infoName}>{ this.props.playlist.name }</div>
             <div className={style.infoUser}>
-              <img className={style.userImg} src={ this.props.playlist.creator && this.props.playlist.creator.avatarUrl } />
+              <img className={style.userImg} src={ this.props.playlist.creator && this.props.playlist.creator.avatarUrl } alt='img' />
               <div className={style.userName}>{ this.props.playlist.creator && this.props.playlist.creator.nickname }</div>
             </div>
             <div className={style.infoEdit}>编辑简介</div>

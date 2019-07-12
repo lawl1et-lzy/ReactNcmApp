@@ -4,19 +4,28 @@ import style from './index.module.scss'
 class SongSheetList extends Component {
   constructor() {
     super()
+    this.state = {
+      list: []
+    }
   }
-
   // 处理歌单列表点击事件
   handleItemClick(id) {
     this.props.handleSongSheetItemClick(id)
   }
-
+  componentWillReceiveProps(props) {
+    let { list } = props
+    if(list) {
+      this.setState({
+        list
+      })
+    }
+  }
   render() {
     return (
       <div className={style.section}>
         <div className={style.scrollView}>
           {
-            this.props.list.map((item, index) => {
+            this.state.list && this.state.list.map((item, index) => {
               let template = (
                 <div 
                   className={style.scrollViewItem} 
