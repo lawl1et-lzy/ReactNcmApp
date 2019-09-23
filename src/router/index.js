@@ -6,7 +6,7 @@ import SongList from '@/pages/SongList'; // 歌曲列表
 let router = [
   {
     path: '/',
-    exact: true, // 是否设置为严格模式
+    exact: true, // 是否设置为严格模式，只有路由为’/‘才能匹配，'/home','/about'等，都不会匹配到。
     name: '我的',
     footerObj: {
       show: true,
