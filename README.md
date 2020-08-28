@@ -103,3 +103,6 @@ $ set PORT=4000 && node app.js
 ### 使用文档
 
 [文档地址](https://binaryify.github.io/NeteaseCloudMusicApi)
+
+
+测试 rebase ctrip add
